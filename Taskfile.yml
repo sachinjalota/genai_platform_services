@@ -1,0 +1,28 @@
+version: '3'
+
+vars:
+  PYTHON: python
+  POETRY: poetry
+  PROJECT_NAME: genai_platform_services
+  SOURCE_DIR: src
+  TESTS_DIR: tests
+
+tasks:
+  setup:
+    desc: Set up the virtual environment for project
+    cmds:
+      - echo "Setting up the virtual env for project..."
+      - '{{.POETRY}} config virtualenv.in-project true'
+      - '{{.POETRY}} install'
+      - pre-commit install
+
+  run:
+    desc: Run the application
+    cmds:
+      - echo "Running the application..."
+      - '{{.POETRY}} run uvicorn src.main:app --host=0.0.0.0 --port=8000 --reload'
+
+  generate-requirements:
+    desc: Export requirements.txt from poetry
+    cmds:
+      - '{{.POETRY}} export -f requirements.txt --without-urls --without-hashes --only main | cut -d ";" -f1 > requirements.txt'

@@ -1,0 +1,6 @@
+line-length = 88  
+select = ["E", "F", "W", "I"]  
+ignore = ["E501"]  
+  
+[format]  
+quote-style = "double"  
