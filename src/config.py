@@ -1,16 +1,20 @@
-import os  
-from dotenv import load_dotenv  
-  
-load_dotenv()  
+import os
+from dotenv import load_dotenv
 
-LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")  
-LOG_PATH = os.getenv("LOG_PATH", "./logs/app.log") 
+load_dotenv()
 
-HEALTH_CHECK = os.getenv("HEALTH_CHECK", "/health")
+BASE_API_HEADERS = {'x-goog-api-key': os.getenv("BASE_API_KEY")}
+BASE_API_KEY = os.getenv("BASE_API_KEY")
+BASE_API_URL = os.getenv("BASE_API_URL")
 
-DEFAULT_COMPLETION_MODEL = os.getenv("DEFAULT_COMPLETION_MODEL", "gemini-1.5-flash")
+DEFAULT_COMPLETION_MODEL = os.getenv("DEFAULT_COMPLETION_MODEL")
 
-BASE_API_URL = os.getenv("BASE_API_URL", "https://10.216.70.62/DEV/litellm/chat/completions")
+GUARD_RAILS_INPUT_PROMPT_ENDPOINT = os.getenv("GUARD_RAILS_INPUT_PROMPT_ENDPOINT")
+GUARD_RAILS_OUTPUT_PROMPT_ENDPOINT = os.getenv("GUARD_RAILS_OUTPUT_PROMPT_ENDPOINT")
+INPUT_PROMPT_GUARDRAIL_ID = int(os.getenv("INPUT_PROMPT_GUARDRAIL_ID", "1"))
+OUTPUT_GUARDRAIL_ID = int(os.getenv("OUTPUT_GUARDRAIL_ID", "2"))
 
-BASE_API_KEY = os.getenv("BASE_API_KEY", 'sk-MpFcAnO34r2gg5d1KA_QAg')
-BASE_API_HEADERS = {'x-goog-api-key': os.getenv("BASE_API_KEY", 'sk-MpFcAnO34r2gg5d1KA_QAg')}
+HEALTH_CHECK = os.getenv("HEALTH_CHECK")
+
+LOG_LEVEL = os.getenv("LOG_LEVEL")
+LOG_PATH = os.getenv("LOG_PATH")

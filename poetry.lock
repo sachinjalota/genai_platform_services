@@ -224,14 +224,14 @@ lxml = ["lxml"]
 
 [[package]]
 name = "boto3-stubs"
-version = "1.37.34"
-description = "Type annotations for boto3 1.37.34 generated with mypy-boto3-builder 8.10.1"
+version = "1.37.36"
+description = "Type annotations for boto3 1.37.36 generated with mypy-boto3-builder 8.10.1"
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "boto3_stubs-1.37.34-py3-none-any.whl", hash = "sha256:298c639dfd5c00756c0dea8b51276c9b7720ccbc97bc78159520620999f4060e"},
-    {file = "boto3_stubs-1.37.34.tar.gz", hash = "sha256:e79b3535663417d3fb4f65bf16a005ce1b426eb377b23605e3c1194d791c95be"},
+    {file = "boto3_stubs-1.37.36-py3-none-any.whl", hash = "sha256:f7c00421bd0d665ed0fb876477d7ec70b589cc2159ccddf2013ada626877388b"},
+    {file = "boto3_stubs-1.37.36.tar.gz", hash = "sha256:d0895cc8b314a4c193355b96530ae8b051a52b9aa07bad371d5b307a140c8a60"},
 ]
 
 [package.dependencies]
@@ -288,7 +288,7 @@ bedrock-data-automation-runtime = ["mypy-boto3-bedrock-data-automation-runtime (
 bedrock-runtime = ["mypy-boto3-bedrock-runtime (>=1.37.0,<1.38.0)"]
 billing = ["mypy-boto3-billing (>=1.37.0,<1.38.0)"]
 billingconductor = ["mypy-boto3-billingconductor (>=1.37.0,<1.38.0)"]
-boto3 = ["boto3 (==1.37.34)"]
+boto3 = ["boto3 (==1.37.36)"]
 braket = ["mypy-boto3-braket (>=1.37.0,<1.38.0)"]
 budgets = ["mypy-boto3-budgets (>=1.37.0,<1.38.0)"]
 ce = ["mypy-boto3-ce (>=1.37.0,<1.38.0)"]
@@ -652,14 +652,14 @@ xray = ["mypy-boto3-xray (>=1.37.0,<1.38.0)"]
 
 [[package]]
 name = "botocore-stubs"
-version = "1.37.29"
+version = "1.37.36"
 description = "Type annotations and code completion for botocore"
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "botocore_stubs-1.37.29-py3-none-any.whl", hash = "sha256:923127abb5fac0b8b0f11837a4641f2863bb4398b5bd6b11d1604134966c4bb6"},
-    {file = "botocore_stubs-1.37.29.tar.gz", hash = "sha256:c59898bf1d09bf6a9f491f4705c5696e74b83156b766aa1716867f11b8a04ea1"},
+    {file = "botocore_stubs-1.37.36-py3-none-any.whl", hash = "sha256:ce388d0187657a6f7cff73b97dd4c548410acf36def2fc54a25c2e93195f4b10"},
+    {file = "botocore_stubs-1.37.36.tar.gz", hash = "sha256:2e7ff46c7d3c2c00db6645af46be1762a3afa8ad25b12fc39c580aa19993c852"},
 ]
 
 [package.dependencies]
@@ -1856,14 +1856,14 @@ signedtoken = ["cryptography (>=3.0.0)", "pyjwt (>=2.0.0,<3)"]
 
 [[package]]
 name = "openai"
-version = "1.74.0"
+version = "1.75.0"
 description = "The official Python library for the openai API"
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "openai-1.74.0-py3-none-any.whl", hash = "sha256:aff3e0f9fb209836382ec112778667027f4fd6ae38bdb2334bc9e173598b092a"},
-    {file = "openai-1.74.0.tar.gz", hash = "sha256:592c25b8747a7cad33a841958f5eb859a785caea9ee22b9e4f4a2ec062236526"},
+    {file = "openai-1.75.0-py3-none-any.whl", hash = "sha256:fe6f932d2ded3b429ff67cc9ad118c71327db32eb9d32dd723de3acfca337125"},
+    {file = "openai-1.75.0.tar.gz", hash = "sha256:fb3ea907efbdb1bcfd0c44507ad9c961afd7dce3147292b54505ecfd17be8fd1"},
 ]
 
 [package.dependencies]
@@ -1883,14 +1883,14 @@ voice-helpers = ["numpy (>=2.0.2)", "sounddevice (>=0.5.1)"]
 
 [[package]]
 name = "opik"
-version = "1.7.2"
+version = "1.7.8"
 description = "Comet tool for logging and evaluating LLM traces"
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "opik-1.7.2-py3-none-any.whl", hash = "sha256:6472dd8c6e2a3bb2c2653f8608a1795acfbd3a7b188b1fdf51a547dcfac69f9b"},
-    {file = "opik-1.7.2.tar.gz", hash = "sha256:418c3823051421332b4433b943f57f85cc2b3e5152414be7cbd2160f51ef8069"},
+    {file = "opik-1.7.8-py3-none-any.whl", hash = "sha256:c74691c000e0164af4e43c3cf723b36d9316e75e83e6e008301ae064ec3089ce"},
+    {file = "opik-1.7.8.tar.gz", hash = "sha256:58f6a8131010b9f71dc08fb329b7d0fbfb0b7d41c03a88484a0c3a6d4d4059f1"},
 ]
 
 [package.dependencies]
@@ -2845,14 +2845,14 @@ files = [
 
 [[package]]
 name = "sentry-sdk"
-version = "2.26.0"
+version = "2.26.1"
 description = "Python client for Sentry (https://sentry.io)"
 optional = false
 python-versions = ">=3.6"
 groups = ["main"]
 files = [
-    {file = "sentry_sdk-2.26.0-py2.py3-none-any.whl", hash = "sha256:82496fc359296dac57ec923300b18cc1f14a1279c1e7108d46d35dbb4cf8f5f8"},
-    {file = "sentry_sdk-2.26.0.tar.gz", hash = "sha256:88643459716dd0c6e412e5141fcc94ce3b5725e4b6b312210b91332b3b46a0e2"},
+    {file = "sentry_sdk-2.26.1-py2.py3-none-any.whl", hash = "sha256:e99390e3f217d13ddcbaeaed08789f1ca614d663b345b9da42e35ad6b60d696a"},
+    {file = "sentry_sdk-2.26.1.tar.gz", hash = "sha256:759e019c41551a21519a95e6cef6d91fb4af1054761923dadaee2e6eca9c02c7"},
 ]
 
 [package.dependencies]
@@ -3118,14 +3118,14 @@ files = [
 
 [[package]]
 name = "types-s3transfer"
-version = "0.11.4"
+version = "0.11.5"
 description = "Type annotations and code completion for s3transfer"
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "types_s3transfer-0.11.4-py3-none-any.whl", hash = "sha256:2a76d92c07d4a3cb469e5343b2e7560e0b8078b2e03696a65407b8c44c861b61"},
-    {file = "types_s3transfer-0.11.4.tar.gz", hash = "sha256:05fde593c84270f19fd053f0b1e08f5a057d7c5f036b9884e68fb8cd3041ac30"},
+    {file = "types_s3transfer-0.11.5-py3-none-any.whl", hash = "sha256:db1a45e6068fa10d4c587ff2d82cc4d6636c254a4270e54f054912ad75e0938a"},
+    {file = "types_s3transfer-0.11.5.tar.gz", hash = "sha256:fa9195006eea3dfdd51af5f51b3dc3a4f575696f323bb0202d03dd3eaea01166"},
 ]
 
 [[package]]
@@ -3346,4 +3346,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10, <=3.12"
-content-hash = "bf11a61bfe4a969b17b4227fbf94e28a84b8c5257cc8cb0901088ba2b91595d2"
+content-hash = "7341741aaa38f00ba513654ea776cb1c5ae5396235a7e52cca76aa8333d5f958"

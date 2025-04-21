@@ -3,7 +3,6 @@ import logging
 from pathlib import Path
 from src.config import LOG_PATH, LOG_LEVEL
 
-
 class Logger:
     _default_logger = None
 

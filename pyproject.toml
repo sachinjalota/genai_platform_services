@@ -77,16 +77,16 @@ isort = "6.0.1"
 pre-commit = "4.2.0"
 pytest = "8.3.5"
 
-[[tool.poetry.source]]
-name = "internal"
-url = "https://artifactory.hdfcbank.com/artifactory/api/pypi/emvs-python-virtual/simple/"
-priority = "primary"
-
 [tool.coverage.run]
 omit = [
     "tests/*",
     "src/logging_config.py"
 ]
+
+[[tool.poetry.source]]
+name = "internal"
+url = "https://artifactory.hdfcbank.com/artifactory/api/pypi/emvs-python-virtual/simple/"
+priority = "primary"
 
 [tool.coverage.report]
 fail_under = 70
