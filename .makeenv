@@ -1,0 +1,18 @@
+BASE_API_KEY = "sk-MpFcAnO34r2gg5d1KA_QAg"
+BASE_API_URL = "https://10.216.70.62/DEV/litellm/chat/completions"
+
+DEFAULT_COMPLETION_MODEL = "gemini-1.5-flash"
+
+GUARD_RAILS_INPUT_PROMPT_ENDPOINT = "https://10.216.70.62/DEV/guardrails/api/v1/analyze/prompt"
+GUARD_RAILS_OUTPUT_PROMPT_ENDPOINT = "https://10.216.70.62/DEV/guardrails/api/v1/analyze/output"
+INPUT_PROMPT_GUARDRAIL_ID = "1"
+OUTPUT_GUARDRAIL_ID = "2"
+
+LOG_LEVEL = INFO
+LOG_PATH = ./logs/app.log
+
+OPIK_API_KEY = ""
+OPIK_CHECK_TLS_CERTIFICATE = "false"
+OPIK_PROJECT_NAME = "platform-neev"
+OPIK_URL_OVERRIDE = "https://10.216.70.62/opik/api"
+OPIK_WORKSPACE = "r36386"
